@@ -1,0 +1,27 @@
+.encabezado{
+    width: $TAMAÑO_CIEN_POR_CIENTO;
+    height: $tamañoVeintePorCiento;
+    display: flex;
+    justify-content: space-between;
+    img{
+        margin: 7% 0% 0% 7%;
+    }
+    #logo{
+        display: flex;
+        align-items: center;
+        margin-right: 15%;
+        #circulo-logo{
+            display: inline-block;
+            width: 1.4rem;
+            height: 1.4rem;
+            border-radius: 50%;
+            border: $COLOR_PRINCIPAL 0.4rem solid;
+            margin-right: 4px;
+        }
+        p{
+            display: inline-block;
+            margin: 0%;
+            font-weight: 700;
+        }
+    }
+}

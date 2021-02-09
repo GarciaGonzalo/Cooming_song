@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+html body{
+    width: $TAMAÑO_CIEN_POR_CIENTO;
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin container {
+    width: 50%;
+    height: $TAMAÑO_CIEN_POR_CIENTO;
+}
+
+
+#containerOne{
+    @include container;
+}
+
+#containerTwo{
+    @include container;
+    #imagen{
+        width: $TAMAÑO_CIEN_POR_CIENTO;
+        height: $TAMAÑO_CIEN_POR_CIENTO;
+        object-fit: cover;
+        object-position: $tamañoVeintePorCiento;
+    }
+}
