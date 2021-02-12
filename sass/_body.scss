@@ -1,31 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
 html body{
-    width: $TAMAÑO_CIEN_POR_CIENTO;
+    width: 100%;
     height: 100vh;
     margin: 0%;
     padding: 0%;
     display: flex;
     justify-content: space-between;
     font-family: 'Open Sans', sans-serif;
+    background-color: rgb(250, 250, 250);
 }
-
-@mixin container {
-    width: 50%;
-    height: $TAMAÑO_CIEN_POR_CIENTO;
-}
-
 
 #containerOne{
+    width: 45%;
     @include container;
 }
 
 #containerTwo{
+    width: 55%;
     @include container;
     #imagen{
-        width: $TAMAÑO_CIEN_POR_CIENTO;
-        height: $TAMAÑO_CIEN_POR_CIENTO;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
-        object-position: $tamañoVeintePorCiento;
+        object-position: 20%;
     }
 }

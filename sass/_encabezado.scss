@@ -1,15 +1,12 @@
 .encabezado{
-    width: $TAMAÑO_CIEN_POR_CIENTO;
-    height: $tamañoVeintePorCiento;
-    display: flex;
+    @include encabezadoYFooter;
     justify-content: space-between;
-    img{
-        margin: 7% 0% 0% 7%;
-    }
+
     #logo{
         display: flex;
         align-items: center;
-        margin-right: 15%;
+        margin: 0% 0% 0% 15%;
+
         #circulo-logo{
             display: inline-block;
             width: 1.4rem;
