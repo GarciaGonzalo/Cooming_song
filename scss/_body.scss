@@ -1,0 +1,50 @@
+    // Extend
+%columnaPorDefecto{
+@include tamañoCienPorCientoContenedor();
+@include make-col(6);
+}
+
+
+
+
+html body{
+    @include tamañoCienPorCientoContenedor();
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(250, 250, 250);
+}
+
+
+#containerBody{
+    @include make-container();
+    height: 100%;
+
+    #rowBody{
+        @include make-row();
+        height: 100%;
+
+        #containerOne{
+            @extend %columnaPorDefecto;
+
+
+            @include media-breakpoint-down(md) {
+                @include make-col(12);
+            }
+            @include media-breakpoint-up(lg) {
+                @include make-col(5);
+            }
+        }
+
+        #containerTwo{
+            @extend %columnaPorDefecto;
+
+
+            @include media-breakpoint-down(md) {
+                visibility: hidden;
+            }
+            @include media-breakpoint-up(lg) {
+                @include make-col(7);
+              }
+        }
+    }
+}

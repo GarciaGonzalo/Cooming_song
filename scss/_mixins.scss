@@ -1,0 +1,11 @@
+@mixin tamañoCienPorCientoContenedor {
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+@mixin tamañoEncabezadoBodyFormyFooter($height, $padding: 10% 12%){
+    height: $height;
+    align-items: center;
+    padding: $padding;
+}

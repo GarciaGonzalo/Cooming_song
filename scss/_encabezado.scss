@@ -1,0 +1,43 @@
+#encabezado{
+    @include tamañoEncabezadoBodyFormyFooter(20%);
+
+    .logo{
+        display: flex;
+        align-items: center;
+        
+        #circulo-logo{
+            display: inline-block;
+            width: 1.4rem;
+            height: 1.4rem;
+            border-radius: 50%;
+            border: $primary 0.4rem solid;
+            margin-right: 5px;
+        }
+        #butterfly{
+            display: inline-block;
+            margin: 0%;
+            font-weight: 700;
+        }
+
+        
+        @include media-breakpoint-down(xl) {
+            #circulo-logo{
+                width: 1.3rem;
+                height: 1.3rem;
+            }
+            #butterfly{
+                font-size: 14px;
+            }
+        }
+
+        @include media-breakpoint-up(xxl) {
+            #circulo-logo{
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            #butterfly{
+                font-size: 20px;
+            }
+        }
+    }
+}

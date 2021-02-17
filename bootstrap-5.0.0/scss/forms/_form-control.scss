@@ -3,7 +3,7 @@
 //
 
 .form-control {
-  display: inline-block;
+  display: block;
   width: 100%;
   padding: $input-padding-y $input-padding-x;
   font-family: $input-font-family;
@@ -54,7 +54,7 @@
 
   // Placeholder
   &::placeholder {
-    color: $input-border-color;
+    color: $input-placeholder-color;
     // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
     opacity: 1;
   }

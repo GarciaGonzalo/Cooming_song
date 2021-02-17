@@ -1,0 +1,37 @@
+#footer{
+    @include tamañoEncabezadoBodyFormyFooter(20%, 0%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .links{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    p{
+        font-size: 13px;
+        color: rgb(158, 158, 158);
+        margin-top: 5%;
+    }
+    i{
+        font-size: 20px;
+    }
+
+
+    @include media-breakpoint-down(xl) {
+        p{
+            font-size: 12px;
+        }
+        i{
+            font-size: 18px;
+        }
+    }
+
+    @include media-breakpoint-up(xxl) {
+        p{
+            font-size: 16px;
+        }
+        i{
+            font-size: 24px;
+        }
+    }
+}
